@@ -1,0 +1,96 @@
+/*Default styling*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 1.75rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+
+/*Universal Selector*/
+*{
+
+}
+
+/*Variables*/
+:root{
+
+}
+
+/*Element Selector*/
+
+ul{
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li{
+    font-style: none;
+    color: black;
+    display: inline;
+    text-align: right;
+    position: relative;
+    bottom: 0;
+    margin: 1rem;
+}
+
+
+/*Classes*/
+.profile-image{
+    width: 10rem;
+    height: 15rem;
+    object-fit: contain;
+
+}
+
+
+/*Id's*/
+#Site-Header{
+    color: black;
+    background-color: darkcyan;
+    display: flex;
+    flex-wrap: wrap;
+}
+
