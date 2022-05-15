@@ -51,6 +51,7 @@ h1 {
 
 /*Universal Selector*/
 *{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -61,36 +62,99 @@ h1 {
 
 /*Element Selector*/
 
-ul{
-    list-style: none;
-    text-align: right;
+main{
+    margin: 2rem 4rem 4rem;
 }
 
-nav ul li{
-    font-style: none;
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+h3{
+    border-bottom: 0.5rem solid black;
+}
+
+a{
+    text-decoration: none;
     color: black;
-    display: inline;
-    text-align: right;
-    position: relative;
-    bottom: 0;
     margin: 1rem;
 }
 
 
 /*Classes*/
-.profile-image{
-    width: 10rem;
-    height: 15rem;
-    object-fit: contain;
+
+.my-work{
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
+.card{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    border: solid teal;
+    border-radius: 2rem;
+    margin: 3rem 1rem 3rem 1rem;
+    height: 400px;
+    align-items: center;
+    justify-content: center;  
+}
+
+.card.refactor{
+    background: url("../Images/html-code.jpeg");
+    background-size: cover;
+    flex: 2 1 100%;
+}
+
+.card.placeholder-1{
+    background: url("../Images/placeholder-1.jpeg");
+    background-size: cover; 
+    flex: 1 1 40%;
+}
+
+.card.placeholder-2{
+    background: url("../Images/placeholder-2.jpeg");
+    background-size: cover; 
+    flex: 1 1 40%;
+}
+
+.card.placeholder-3{
+    background: url("../Images/placeholder-3.jpeg");
+    background-size: cover; 
+    flex: 1 1 40%;
+}
+
+.card.placeholder-4{
+    background: url("../Images/placeholder-4.jpeg");
+    background-size: cover;
+    flex: 1 1 40%; 
+}
+
+.card-header{
+    border: 5px solid teal;
+    width: fit-content;
+    border-radius: 2rem;
+    background-color: teal;
+}
+
+.profile-image{
+    width: 10rem;
+    height: 13rem;
+    object-fit: contain;
+    border: 0.5rem solid black;
+    margin: 1rem;
+    float: left;
+}
 
 /*Id's*/
-#Site-Header{
+#Site-Header, footer{
     color: black;
     background-color: darkcyan;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-
