@@ -4,8 +4,6 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: 1.75rem;
     line-height: 1.5;
 }
@@ -57,10 +55,25 @@ h1 {
 
 /*Variables*/
 :root{
+  --main-color: teal;
 
 }
 
 /*Element Selector*/
+
+a{
+  text-decoration: none;
+  color: black;
+  margin: 1rem;
+}
+
+h3{
+  border-bottom: 0.5rem solid black;
+}
+
+header h1{
+  margin-left: 1rem;
+}
 
 main{
     margin: 2rem 4rem 4rem;
@@ -72,41 +85,25 @@ nav ul{
 
 }
 
-h3{
-    border-bottom: 0.5rem solid black;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    margin: 1rem;
-}
-
-
 /*Classes*/
-
-.my-work{
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 .card{
     display:flex;
     flex-direction: column;
     flex-wrap:wrap;
-    border: solid teal;
+    border: solid var(--main-color);
     border-radius: 2rem;
     margin: 3rem 1rem 3rem 1rem;
     height: 400px;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 }
 
-.card.refactor{
-    background: url("../Images/html-code.jpeg");
-    background-size: cover;
-    flex: 2 1 100%;
+.card-header{
+  border: 5px solid var(--main-color);
+  width: fit-content;
+  border-radius: 2rem;
+  background-color: var(--main-color);
 }
 
 .card.placeholder-1{
@@ -133,11 +130,16 @@ a{
     flex: 1 1 40%; 
 }
 
-.card-header{
-    border: 5px solid teal;
-    width: fit-content;
-    border-radius: 2rem;
-    background-color: teal;
+.card.refactor{
+  background: url("../Images/html-code.jpeg");
+  background-size: cover;
+  flex: 2 1 100%;
+}
+
+.my-work{
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .profile-image{
@@ -152,9 +154,16 @@ a{
 /*Id's*/
 #Site-Header, footer{
     color: black;
-    background-color: darkcyan;
+    background-color: var(--main-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+/*psuedo elements*/
+
+.card:hover{
+  transition: all 0.5s;
+  opacity: 50%;
 }
