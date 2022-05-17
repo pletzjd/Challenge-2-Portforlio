@@ -8,12 +8,7 @@ body {
     line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   margin-bottom: 0.625rem;
   font-weight: 700;
   line-height: 1.1;
@@ -67,6 +62,10 @@ a{
   margin: 1rem;
 }
 
+footer{
+  height: 4rem;
+}
+
 h3{
   border-bottom: 0.5rem solid black;
 }
@@ -100,40 +99,43 @@ nav ul{
 }
 
 .card-header{
-  border: 5px solid var(--main-color);
+  border: 0.4rem solid black;
+  padding: 0.5rem;
   width: fit-content;
+  justify-self: center;
+  align-self: center;
   border-radius: 2rem;
   background-color: var(--main-color);
 }
 
 .card.placeholder-1{
     background: url("../Images/placeholder-1.jpeg");
-    background-size: cover; 
-    flex: 1 1 40%;
+    background-size: fill; 
 }
 
 .card.placeholder-2{
     background: url("../Images/placeholder-2.jpeg");
-    background-size: cover; 
-    flex: 1 1 40%;
+    background-size: fill; 
 }
 
 .card.placeholder-3{
     background: url("../Images/placeholder-3.jpeg");
-    background-size: cover; 
-    flex: 1 1 40%;
+    background-size: fill; 
 }
 
 .card.placeholder-4{
     background: url("../Images/placeholder-4.jpeg");
-    background-size: cover;
-    flex: 1 1 40%; 
+    background-size: fill;
 }
 
 .card.refactor{
   background: url("../Images/html-code.jpeg");
-  background-size: cover;
+  background-size: fill;
   flex: 2 1 100%;
+}
+
+.card.card-small{
+  flex: 1 1 40%; 
 }
 
 .my-work{
@@ -145,14 +147,15 @@ nav ul{
 .profile-image{
     width: 10rem;
     height: 13rem;
-    object-fit: contain;
+    object-fit:fill;
     border: 0.5rem solid black;
     margin: 1rem;
     float: left;
+
 }
 
 /*Id's*/
-#Site-Header, footer{
+#Site-Header, #Site-Footer{
     color: black;
     background-color: var(--main-color);
     display: flex;
