@@ -109,27 +109,27 @@ nav ul{
 }
 
 .card.placeholder-1{
-    background: url("../Images/placeholder-1.jpeg");
+    background-image: url("../Images/placeholder-1.jpeg");
     background-size: fill; 
 }
 
 .card.placeholder-2{
-    background: url("../Images/placeholder-2.jpeg");
+    background-image: url("../Images/placeholder-2.jpeg");
     background-size: fill; 
 }
 
 .card.placeholder-3{
-    background: url("../Images/placeholder-3.jpeg");
+    background-image: url("../Images/placeholder-3.jpeg");
     background-size: fill; 
 }
 
 .card.placeholder-4{
-    background: url("../Images/placeholder-4.jpeg");
+    background-image: url("../Images/placeholder-4.jpeg");
     background-size: fill;
 }
 
-.card.refactor{
-  background: url("../Images/html-code.jpeg");
+.card.dateNight{
+  background-image: url("../Images/night-sky.jpg");
   background-size: fill;
   flex: 2 1 100%;
 }
@@ -147,7 +147,7 @@ nav ul{
 .profile-image{
     width: 10rem;
     height: 13rem;
-    object-fit:fill;
+    object-fit: fill;
     border: 0.5rem solid black;
     margin: 1rem;
     float: left;
@@ -167,6 +167,8 @@ nav ul{
 /*psuedo elements*/
 
 .card:hover{
-  transition: all 0.5s;
+  transition-property: background-image;
+  transition: all 1s;
   opacity: 50%;
+
 }
